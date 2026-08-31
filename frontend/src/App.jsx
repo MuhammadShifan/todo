@@ -16,7 +16,7 @@ const MainDashboard = ({ handleLogout, token }) => {
 
   const fetchTodos = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/todos', authConfig);
+      const res = await axios.get('http://localhost:30005/api/todos', authConfig);
       setTodos(res.data);
     } catch (err) {
       console.error(err);
@@ -27,7 +27,7 @@ const MainDashboard = ({ handleLogout, token }) => {
     e.preventDefault();
     if (!task) return;
     try {
-      const res = await axios.post('http://localhost:5000/api/todos', { text: task }, authConfig);
+      const res = await axios.post('http://localhost:30005/api/todos', { text: task }, authConfig);
       setTodos([...todos, res.data]);
       setTask('');
     } catch (err) {
@@ -37,7 +37,7 @@ const MainDashboard = ({ handleLogout, token }) => {
 
   const deleteTask = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/todos/${id}`, authConfig);
+      await axios.delete(`http://localhost:30005/api/todos/${id}`, authConfig);
       setTodos(todos.filter(t => t._id !== id));
     } catch (err) {
       console.error(err);
@@ -101,7 +101,7 @@ function App() {
     
     try {
       const endpoint = activeTab === 'login' ? '/api/auth/login' : '/api/auth/register';
-      const res = await axios.post(`http://localhost:5000${endpoint}`, { email, password });
+      const res = await axios.post(`http://localhost:30005${endpoint}`, { email, password });
       
       localStorage.setItem('token', res.data.token);
       setIsAuthenticated(true);

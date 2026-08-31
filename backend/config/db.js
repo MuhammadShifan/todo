@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    const MONGO_URI = 'mongodb://localhost:27017/todoapp';
+    const MONGO_URI = 'mongodb://mongo:27017/todo';
     await mongoose.connect(MONGO_URI);
     console.log('MongoDB Connected Successfully');
   } catch (err) {
