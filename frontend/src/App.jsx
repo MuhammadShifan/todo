@@ -130,7 +130,7 @@ function App() {
         </div>
         
         <h1 className="hero-text">
-          Organize your actions.<br />
+          Organize your tasks and actions.<br />
           Stay <span className="highlight">productive.</span>
         </h1>
         <p className="hero-subtext">
