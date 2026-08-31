@@ -1,0 +1,29 @@
+services:
+  todo-mongodb:
+    image: mongo:latest
+    container_name: todo-mongodb
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  backend:
+    build: ./backend
+    container_name: mern-backend
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb://todo-mongodb:27017/todoapp
+    depends_on:
+      - todo-mongodb
+
+  frontend:
+    build: ./frontend
+    container_name: mern-frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+volumes:
+  mongo-data:

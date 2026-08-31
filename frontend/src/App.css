@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+/* Left Side Styles */
+.login-left {
+  flex: 1;
+  background-color: #f7f5ff;
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.brand-icon {
+  color: #5b21b6;
+}
+
+.hero-text {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #5b21b6;
+}
+
+.hero-subtext {
+  font-size: 16px;
+  color: #666;
+  max-width: 400px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.feature-item .icon {
+  background-color: #ede9fe;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.feature-text h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 5px;
+}
+
+.feature-text p {
+  font-size: 14px;
+  color: #666;
+}
+
+.quote {
+  margin-top: auto;
+  font-size: 14px;
+  color: #5b21b6;
+  font-weight: 500;
+  text-align: center;
+  max-width: 300px;
+  align-self: center;
+}
+
+.quote span {
+  color: #888;
+  font-weight: 400;
+}
+
+/* Right Side Styles */
+.login-right {
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  border: 1px solid #f0f0f0;
+}
+
+.login-card h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #f0f0f0;
+  margin-bottom: 30px;
+}
+
+.tab {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #888;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab.active {
+  color: #5b21b6;
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #5b21b6;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  font-size: 18px;
+  color: #888;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 15px 15px 15px 45px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #5b21b6;
+}
+
+.input-icon-right {
+  position: absolute;
+  right: 15px;
+  font-size: 18px;
+  color: #888;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+}
+
+.forgot-link {
+  color: #5b21b6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.primary-btn {
+  background-color: #5b21b6;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.primary-btn:hover {
+  background-color: #4c1d95;
+}
+
+.switch-account {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #666;
+}
+
+.link {
+  color: #5b21b6;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer-copyright {
+  position: absolute;
+  bottom: 20px;
+  font-size: 12px;
+  color: #aaa;
+}
