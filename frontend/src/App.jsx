@@ -169,7 +169,7 @@ function App() {
 
       <div className="login-right">
         <div className="login-card">
-          <h2>Welcome Back!</h2>
+          <h2>Welcome Back Buddy!</h2>
           <p className="subtitle">Login to your account to continue</p>
 
           <div className="tabs">
