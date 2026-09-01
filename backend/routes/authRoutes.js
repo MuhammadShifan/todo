@@ -20,7 +20,7 @@ router.post('/register', async (req, res) => {
     const token = jwt.sign({ userId: newUser._id }, JWT_SECRET);
     res.json({ token, msg: 'Registration Successful' });
   } catch (error) {
-    console.error("Auth Error Details:", err);
+    console.error("Auth Error Details:", error);
     res.status(500).json({ msg: 'Server Error' });
   }
 });
@@ -38,7 +38,7 @@ router.post('/login', async (req, res) => {
     const token = jwt.sign({ userId: user._id }, JWT_SECRET);
     res.json({ token, msg: 'Login Successful' });
   } catch (error) {
-    console.error("Auth Error Details:", err);
+    console.error("Auth Error Details:", error);
     res.status(500).json({ msg: 'Server Error' });
   }
 });
