@@ -131,7 +131,7 @@ function App() {
         
         <h1 className="hero-text">
           Organize your tasks and actions.<br />
-          Stay <span className="highlight">Tune...</span>
+          Stay <span className="highlight">Tune</span>
         </h1>
         <p className="hero-subtext">
           Todo helps you plan your day, manage your tasks and get things done efficiently and effectively.
@@ -159,11 +159,6 @@ function App() {
               <p>Monitor your completed tasks and achieve your goals.</p>
             </div>
           </div>
-        </div>
-
-        <div className="quote">
-          "The secret of getting ahead is getting started."<br />
-          <span>- Mark Twain</span>
         </div>
       </div>
 
