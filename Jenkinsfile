@@ -1,17 +1,18 @@
 pipeline {
     agent any
-    
+
     stages {
-        stage('Build & Test') {
+        stage('Build Frontend & Backend Images') {
             steps {
-                echo 'Code fetched from GitHub successfully!'
-                echo 'Running tests...'
+                echo 'Building Docker images...'
+                sh 'docker build -t devstackproject-frontend:latest ./frontend'
+                sh 'docker build -t devstackproject-backend:latest ./backend'
             }
         }
-        stage('Deploy to Kubernetes') {
+        
+        stage('Pipeline Status') {
             steps {
-                echo 'Simulating Kubernetes Deployment...'
-                echo 'Note: Since Jenkins is in a Docker container without K8s access, manual restart is required locally.'
+                echo 'CI Pipeline completed successfully! Ready for K8s deployment.'
             }
         }
     }
