@@ -134,7 +134,7 @@ function App() {
           Stay <span className="highlight">Tune...</span>
         </h1>
         <p className="hero-subtext">
-          Todo helps you plan your day, manage your tasks and get things done efficiently.
+          Todo helps you plan your day, manage your tasks and get things done efficiently and effectively.
         </p>
 
         <div className="feature-list">
