@@ -131,7 +131,7 @@ function App() {
         
         <h1 className="hero-text">
           Organize your tasks and actions.<br />
-          Stay <span className="highlight">Tune.</span>
+          Stay <span className="highlight">Tune...</span>
         </h1>
         <p className="hero-subtext">
           Todo helps you plan your day, manage your tasks and get things done efficiently.
