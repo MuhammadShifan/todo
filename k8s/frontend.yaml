@@ -15,6 +15,7 @@ spec:
       containers:
       - name: frontend
         image: devstackproject-frontend:latest
+        imagePullPolicy: Always
         imagePullPolicy: Never
         ports:
         - containerPort: 5173
