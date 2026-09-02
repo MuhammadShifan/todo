@@ -49,7 +49,7 @@ const MainDashboard = ({ handleLogout, token }) => {
       
       <div style={{ width: '100%', maxWidth: '600px', backgroundColor: '#fff', padding: '30px', borderRadius: '16px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-          <h2 style={{ color: '#1a1a1a' }}>📝 My Tasks</h2>
+          <h2 style={{ color: '#1a1a1a' }}>📝 My Task and Shedule</h2>
           <button onClick={handleLogout} style={{ background: 'none', border: 'none', color: 'red', cursor: 'pointer', fontWeight: 'bold' }}>Logout</button>
         </div>
 
